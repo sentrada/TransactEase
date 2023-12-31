@@ -1,8 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactEase.Core", "TransactEase.Core\TransactEase.Core.csproj", "{4710C418-89A7-4E09-BDFD-6581E700E82C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4710C418-89A7-4E09-BDFD-6581E700E82C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4710C418-89A7-4E09-BDFD-6581E700E82C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4710C418-89A7-4E09-BDFD-6581E700E82C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4710C418-89A7-4E09-BDFD-6581E700E82C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
