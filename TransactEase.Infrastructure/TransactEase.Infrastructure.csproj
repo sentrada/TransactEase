@@ -7,7 +7,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\TransactEase.ExcelImporter\TransactEase.ExcelImporter.csproj"/>
+        <ProjectReference Include="..\TransactEase.Core\TransactEase.Core.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.1"/>
     </ItemGroup>
 
 </Project>
