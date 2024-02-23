@@ -6,7 +6,7 @@ namespace TransactEase.Infrastructure.Persistence;
 
 public class TransactEaseDbContext : DbContext
 {
-    public DbSet<Bank> Banks { get; set; }
+    public DbSet<BranchOffice> Banks { get; set; }
 
     public TransactEaseDbContext(DbContextOptions<TransactEaseDbContext> options) : base(options)
     {
@@ -14,7 +14,7 @@ public class TransactEaseDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Bank>()
+        modelBuilder.Entity<BranchOffice>()
             .Property(b => b.Id).HasValueGenerator<SequentialGuidValueGenerator>();
     }
 }

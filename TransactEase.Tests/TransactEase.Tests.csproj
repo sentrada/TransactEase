@@ -24,8 +24,10 @@
     </ItemGroup>
 
     <ItemGroup>
+        <ProjectReference Include="..\TransactEase.Backend\TransactEase.Backend.csproj"/>
         <ProjectReference Include="..\TransactEase.Core\TransactEase.Core.csproj"/>
         <ProjectReference Include="..\TransactEase.ExcelImporter\TransactEase.ExcelImporter.csproj"/>
+        <ProjectReference Include="..\TransactEase.Infrastructure\TransactEase.Infrastructure.csproj"/>
     </ItemGroup>
 
     <ItemGroup>

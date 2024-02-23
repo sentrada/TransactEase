@@ -1,13 +1,12 @@
-using Microsoft.EntityFrameworkCore;
-using TransactEase.Infrastructure.Persistence;
+using TransactEase.Core;
+using TransactEase.Infrastructure;
 using TransactEase.Web.Components;
 
 var builder = WebApplication.CreateBuilder(args);
+var connectionString =
+    "Server=localhost;Database=TransactEase;Trusted_Connection=False;MultipleActiveResultSets=true;User Id=sentrada;Password=!P'szt!c'!;";
 
-builder.Services.AddDbContext<TransactEaseDbContext>(options =>
-    options.UseSqlServer(
-        "Server=localhost;Database=TransactEase;Trusted_Connection=False;MultipleActiveResultSets=true;User Id=sentrada;Password=!P'szt!c'!;"));
-
+builder.Services.AddCoreServices().AddInfrastructureServices(connectionString);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
